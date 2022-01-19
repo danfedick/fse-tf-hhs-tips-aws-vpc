@@ -1,8 +1,8 @@
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
-  name = "consul-vpc"
-  cidr = "10.0.0.0/16"
+  name = "hhs-tips"
+  cidr = "10.27.0.0/16"
 
   azs             = ["${var.region}a", "${var.region}b"]
   private_subnets = var.private_sub_cidrs

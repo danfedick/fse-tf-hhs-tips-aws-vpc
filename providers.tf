@@ -18,6 +18,7 @@ provider "aws" {
       Terraform   = true
       Environment = "development"
       DoNotDelete = true
+      Name   	  = "HHS-TIPS"
     }
   }
 
